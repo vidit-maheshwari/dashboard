@@ -1,0 +1,11 @@
+.active {
+  background-color: var(--backmenu);
+}
+
+.active::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background: var(--pink);
+  margin-right: calc(1rem - 8px);
+}
