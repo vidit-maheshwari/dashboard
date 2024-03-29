@@ -18,8 +18,10 @@ const Sidebar = () => {
 
             <div className="menu flex-col mt-16 gap-8">
             {SidebarData.map((item,index)=>{
-            return <div key={index} className={`menuItem flex ml-4 items-center rounded-lg mt-8 gap-3 text-lg transition ease-linear duration-300 hover:cursor-pointer p-2 ${active===index ? "active":""}`} onClick={()=>{setActive(index)}} >
-                    <item.icon className="f float-left "/>
+            return <div key={index} className={`menuItem flex ml-4 items-center rounded-lg mt-8 gap-2 text-md transition ease-linear duration-300 hover:cursor-pointer p-2 ${active===index ? "active":""}`} onClick={()=>{setActive(index)}} >
+                    <span>
+                        <item.icon className="f float-left"/>
+                    </span>
                     <span>
                         {item.heading}
                     </span>
@@ -27,12 +29,18 @@ const Sidebar = () => {
                     })}
                 </div>
 
-            <div className={`menuItem flex items-center mt-32 gap-3 rounded-r-lg text-lg hover:cursor-pointer p-2  ${active===active ? "active":""}`}>
+            {/* <div className={`menuItem flex items-center mt-32 gap-3 rounded-r-lg text-lg hover:cursor-pointer p-2  ${active===active ? "active":""}`}>
                 <UilSignOutAlt size="30"/>
                 <span className=''>
                     Sign Out
                 </span>
-            </div>
+            </div> */}
+            <button
+                className="py-2 px-4 rounded-xl bg-[#7875fa] hover:bg-white hover:text-[#7875fa] focus:text-[#7875fa] focus:bg-gray-200 focus:border-2 border-black text-gray-50 font-bold leading-loose transition duration-200 flex items-center mt-32 gap-3 m-6">
+                    <UilSignOutAlt size="30"/>
+                     Sign Out
+            </button>
+
             
             </div>
     </>
