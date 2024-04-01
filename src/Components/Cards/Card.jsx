@@ -1,9 +1,8 @@
-
 import './Card.css';
 
 const Card = (props) => {
   return (
-    <div className="card-container bg-white w-52 h-36 border-1 border-slate-600 shadow-xl shadow-grey rounded-xl">
+    <div className="card-container bg-white w-52 h-36 border-1 border-slate-600 shadow-xl shadow-grey rounded-xl ">
       <div className="card-wrapper p-2">
         <div className="card-image flex-col justify-center items-center w-12 h-12 ml-3 relative p-2">
           <img src={props.image} alt="" />
