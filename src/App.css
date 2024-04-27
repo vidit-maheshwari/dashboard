@@ -18,14 +18,15 @@
 }
 
 .App {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to left bottom,
     #5755fe,
     #7875fa,
     #9593f2,
     #b1b0e9,
     #cdcddd
-  );
+  ); */
+  /* for liner background */
   height: 100vh;
   display: flex;
   justify-content: center;

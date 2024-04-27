@@ -5,6 +5,7 @@ import SearchBar from "../SearchBar/SearchBar"
 import StockTicker from "../Stock Ticker/StockTicker"
 import './Mainsdash.css'
 
+
 // import { cardsData } from "../../Data/Data"
 
 
@@ -25,11 +26,11 @@ const Maindash = () => {
         <div className="cards flex gap-4 ml-10 mt-10 ">
             <Cards/>
         </div>
-        <div className="transctions mt-6 ml-10">
+        <div className="transctions mt-6 ml-10 flex gap-7">
+            <StockTicker/>
             <StockTicker/>
         </div>
       </div>
-    
     </>
   )
 }
